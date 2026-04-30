@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    background-color: #050505;
+    color: #F0EAD6;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #050505;
+    --foreground: #F0EAD6;
+    --primary-color: #050505;
+    --gold: #C9922A;
+    --gold2: #E8B84B;
+    --gold3: #F5D78E;
+    --red: #8B0000;
+}
+
+@layer base {
+    body {
+        font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+}
+
+@layer utilities {
+    .text-balance { text-wrap: balance; }
+    .font-serif-display {
+        font-family: "Cormorant Garamond", Georgia, serif;
+    }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0D0D0D; }
+::-webkit-scrollbar-thumb { background: #C9922A; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #E8B84B; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes scrollpulse {
+    0%, 100% { opacity: 0.3; }
+    50%       { opacity: 1; }
+}
+
+.fade-in { animation: fadeIn 0.7s ease-in forwards; }
+
+.swiper-slide {
+    width: 200px !important;
+    height: 280px !important;
+}
+@media (min-width: 640px) {
+    .swiper-slide {
+        width: 320px !important;
+        height: 420px !important;
+    }
+}
+@media (min-width: 768px) {
+    .swiper-slide {
+        width: 480px !important;
+        height: 680px !important;
+    }
+}
+
+.swiper-scrollbar { background: rgba(201, 146, 42, 0.15) !important; }
+.swiper-scrollbar-drag { background: #C9922A !important; }
+
+.wrapper { display: flex; }
+
+::selection {
+    background: rgba(201, 146, 42, 0.3);
+    color: #F5D78E;
+}
+*:focus-visible {
+    outline: 1px solid #C9922A;
+    outline-offset: 2px;
+}
