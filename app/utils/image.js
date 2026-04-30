@@ -1,5 +1,5 @@
 const images = [
-    { src: "/assets/Croix.webp", alt: "Dompter la croix ardente" },
+    { src: "/assets/croix.webp", alt: "Dompter la croix ardente" },
     { src: "/assets/Fete.webp", alt: "L'éclat de la Nuit Lumière" },
     { src: "/assets/artifice.webp", alt: "Explosion d'or et de lumière" },
     { src: "/assets/jongleur.webp", alt: "Tracés circulaires de feu" },
